@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs: 
-  name: hello-job
-  runs-on: ubuntu-latest
+  hello-job:
+    runs-on: ubuntu-latest
 
   steps:
     - name: Echo text
