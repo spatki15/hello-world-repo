@@ -28,7 +28,7 @@ on:
         required: true
         type: boolean
         default: false
-      sorter_version:
+      edge_version:
         description: 'Edge Version'
         required: true
         type: string
