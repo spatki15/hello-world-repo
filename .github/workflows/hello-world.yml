@@ -20,14 +20,14 @@ on:
         default: false
 
 jobs:
-  frontend-deployment:
+  asrs-deployment:
     if: ${{ github.event.inputs.deploy_asrs == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Build and Deploy ASRS
         run: echo "Deploying ASRS at version ${{ github.event.inputs.version }}"
 
-  api-deployment:
+  sorter-deployment:
     if: ${{ github.event.inputs.deploy_sorter == 'true' }}
     runs-on: ubuntu-latest
     steps:
