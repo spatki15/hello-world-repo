@@ -29,7 +29,7 @@ on:
         type: boolean
         default: false
       sorter_version:
-        description: 'Edge' Version'
+        description: 'Edge Version'
         required: true
         type: string
         default: 'v1.1.0'  
