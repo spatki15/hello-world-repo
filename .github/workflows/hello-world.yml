@@ -22,7 +22,17 @@ on:
         description: 'Sorter Version'
         required: true
         type: string
-        default: 'v1.0.0'  
+        default: 'v2.0.0'  
+      deploy_edge:
+        description: 'Edge'
+        required: true
+        type: boolean
+        default: false
+      sorter_version:
+        description: 'Edge' Version'
+        required: true
+        type: string
+        default: 'v1.1.0'  
 
 jobs:
   asrs-deployment:
