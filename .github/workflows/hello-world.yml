@@ -3,21 +3,26 @@ name: Conditional Product Deployment
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Target Version'
-        required: true
-        type: string
-        default: 'v1.0.0'
       deploy_asrs:
         description: 'ASRS'
         required: true
         type: boolean
         default: false
+      asrs_version:
+        description: 'ASRS Version'
+        required: true
+        type: string
+        default: 'v1.0.0'        
       deploy_sorter:
         description: 'Sorter'
         required: true
         type: boolean
         default: false
+      sorter_version:
+        description: 'Sorter Version'
+        required: true
+        type: string
+        default: 'v1.0.0'  
 
 jobs:
   asrs-deployment:
